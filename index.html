@@ -44,7 +44,9 @@ permalink: /
 {% if site.index_carousel %}
 {% include carousel.html %}
 {% endif %}
+<audio id="player" src="/static/sound/hb_elaine.mp3" controls autoplay loop width="2000"height="200">
 
+</audio>
 {% for section in site.data.landing %}
 {% assign loopindex = forloop.index | modulo: 2 %}
 <section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
